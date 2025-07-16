@@ -25,7 +25,34 @@ L’objectif principal est de :
 ## 💡 Environnement requis
 
 - Python 3.10
-- Voir `requirements.txt` pour les bibliothèques à installer.
+- Si tu utilises conda, tu peux créer un environnement comme suit :
+
+```bash
+conda create -n movie_review_env python=3.10
+conda activate movie_review_env
+pip install -r requirements.txt
+```
+
+### requirements.txt
+
+Ce fichier liste les packages compatibles avec mon code et mon environnement :
+
+```txt
+streamlit==1.35.0
+tensorflow==2.19.0
+scikit-learn==1.4.1
+numpy==1.24.4
+pandas==2.1.4
+nltk==3.8.1
+```
+⚠️ Remarque : tensorflow==2.19.0 car c’est celle que j'utilise. Si tu veux être compatible avec tensorflow-cpu, tu peux préciser :
+
+```txt
+tensorflow-cpu==2.19.0
+```
+
+Mais ne mets pas les deux en même temps (tensorflow et tensorflow-cpu sont mutuellement exclus).
+
 
 ## 🧠 Données
 

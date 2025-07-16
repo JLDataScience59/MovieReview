@@ -33,7 +33,7 @@ conda activate movie_review_env
 pip install -r requirements.txt
 ```
 
-### requirements.txt
+### 📝 requirements.txt
 
 Ce fichier liste les packages compatibles avec mon code et mon environnement :
 
@@ -89,6 +89,22 @@ pip install -r requirements.txt
 cd app
 streamlit run app.py
 ```
+
+### 4. Tu peux tester quelques mots, par exemple :
+
+```txt
+night
+love
+actor
+gun
+school
+ghost
+```
+Et tu verras que certains mots proches peuvent être :
+
+- Thématiques,
+- Visuels (selon le contexte du corpus),
+- Ou parfois inattendus si le dataset est bruité.
 
 ## Suivi des fichiers .h5 avec Git LFS
 

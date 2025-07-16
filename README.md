@@ -12,13 +12,13 @@ L’objectif principal est de :
 
 ## 📁 Organisation du projet
 
-- `app/` : Application Streamlit à déployer.
-- `models/` : Contiendra le fichier `.h5` sauvegardé avec Git LFS.
-- `notebooks/` : Contient le code d'entraînement, le prétraitement et les tests.
-- `.gitattributes` : Fichier de configuration Git LFS.
-- `README.md` : Fichier Readme.
-- `requirements.txt` : Liste des dépendances nécessaires.
-
+.
+├── app/                  # Application Streamlit (app.py)
+├── models/               # Modèle entraîné et tokenizer (fichiers suivis avec Git LFS)
+├── notebooks/            # Notebook d'entraînement du modèle Word2Vec
+├── requirements.txt      # Dépendances Python
+├── .gitattributes        # Suivi Git LFS pour le modèle
+└── README.md             # Ce fichier
 
 ## 💡 Environnement requis
 
@@ -28,8 +28,17 @@ L’objectif principal est de :
 ## 🧠 Données
 
 Le jeu de données comprend **25 000 critiques de films** en anglais. Ces critiques serviront à entraîner le modèle Word2Vec pour apprendre des représentations vectorielles du langage (embeddings).
+⚠️ Ce fichier n’est pas stocké dans le dépôt pour ne pas alourdir le repo. Il est à télécharger manuellement pour l’entraînement ici : **[lien](https://train-exo.s3.eu-west-1.amazonaws.com/2317/MovieReview.csv)**
 
-🔗 Les données peuvent être téléchargées ici : **[lien](https://train-exo.s3.eu-west-1.amazonaws.com/2317/MovieReview.csv)**
+## 🧪 Entraînement du modèle Word2Vec
+
+Un notebook d'entraînement est disponible dans notebooks/, contenant :
+- Le nettoyage des données textuelles,
+- La tokenisation et la construction du vocabulaire,
+- L’entraînement du modèle de type skip-gram via Keras,
+- La sauvegarde des artefacts :
+    - word2vec.h5 (modèle Keras),
+    - tokenizer.pkl (tokenizer TensorFlow).
 
 ## 🚀 Lancement du projet
 

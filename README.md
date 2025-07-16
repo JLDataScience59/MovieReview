@@ -12,12 +12,18 @@ L’objectif principal est de :
 
 ## 📁 Organisation du projet
 
-- `notebooks/` : Contient le code d'entraînement, le prétraitement et les tests.
-- `data/` : Contient les données d'entraînement (critiques de films).
-- `models/` : Contiendra le fichier `.h5` sauvegardé avec Git LFS.
 - `app/` : Application Streamlit à déployer.
-- `requirements.txt` : Liste des dépendances nécessaires.
+- `models/` : Contiendra le fichier `.h5` sauvegardé avec Git LFS.
+- `notebooks/` : Contient le code d'entraînement, le prétraitement et les tests.
 - `.gitattributes` : Fichier de configuration Git LFS.
+- `README.md` : Fichier Readme.
+- `requirements.txt` : Liste des dépendances nécessaires.
+
+
+## 💡 Environnement requis
+
+- Python 3.10
+- Voir `requirements.txt` pour les bibliothèques à installer.
 
 ## 🧠 Données
 

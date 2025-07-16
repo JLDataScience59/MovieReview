@@ -23,7 +23,7 @@ L’objectif principal est de :
 
 Le jeu de données comprend **25 000 critiques de films** en anglais. Ces critiques serviront à entraîner le modèle Word2Vec pour apprendre des représentations vectorielles du langage (embeddings).
 
-🔗 Les données peuvent être téléchargées ici : **[(https://train-exo.s3.eu-west-1.amazonaws.com/2317/MovieReview.csv)]**
+🔗 Les données peuvent être téléchargées ici : **[lien](https://train-exo.s3.eu-west-1.amazonaws.com/2317/MovieReview.csv)**
 
 ## 🚀 Lancement du projet
 
@@ -56,7 +56,7 @@ git lfs track "*.h5"
 git add .gitattributes
 ```
 
-Le fichier .gitattributes contient déjà les règles nécessaires.
+Le fichier `.gitattributes` contient déjà les règles nécessaires.
 
 ## Technologies utilisées
 
@@ -70,4 +70,4 @@ Le fichier .gitattributes contient déjà les règles nécessaires.
 
 ## Auteur
 
-Projet réalisé dans le cadre du module Deep Learning de la formation **[(https://datascientest.com/formation-data-scientist)]**
+Projet réalisé dans le cadre du module Deep Learning de la formation **[Data-Scientist](https://datascientest.com/formation-data-scientist)** de l'organisme de formation **[DataScientest](https://datascientest.com)**

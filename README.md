@@ -12,6 +12,7 @@ L’objectif principal est de :
 
 ## 📁 Organisation du projet
 
+```graphql
 .
 ├── app/                  # Application Streamlit (app.py)
 ├── models/               # Modèle entraîné et tokenizer (fichiers suivis avec Git LFS)
@@ -19,6 +20,7 @@ L’objectif principal est de :
 ├── requirements.txt      # Dépendances Python
 ├── .gitattributes        # Suivi Git LFS pour le modèle
 └── README.md             # Ce fichier
+```
 
 ## 💡 Environnement requis
 
